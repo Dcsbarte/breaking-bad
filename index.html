@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> BREAKING BAD</title>
+	<link rel="stylesheet" type="text/css" href="css/homework2.css">
+	<link rel="stylesheet" type="text/css" href="css/hover.css">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+	
+
+	<!--fotorama-->
+	<link rel="stylesheet" href="css/fotorama.css">
+	<script type="js/fotorama.js"></script>
+</head>
+<body>
+	<!-- CRIANDO O MENU TOPO -->
+	<header class="hvr-pulse">
+		<nav>
+			<ul><!-- criando menu com lista ul -->
+				<li><a id="banner"> Home </a></li>
+				<li><a id="texto"> Sobre </a></li>
+				<li><a id="imagem"> Galeria </a></li>
+				<li><a id="personagens"> Personagens </a></li>
+			</ul>
+		</nav><!-- encerra o menu -->
+	</header>
+	<!-- CRIANDO O BANER -->
+	<section class="banner">	
+		<h3 id="Banner">Breaking</h3>
+	</section>
+	<!-- CRIANDO O CONTEUDO -->
+	<article class="texto">
+		<h4 id="Texto">Texto</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</article>
+	<!-- CARREGANDO AS IMAGENS -->
+	<article>
+		<h4 id="Imagem">Imagem</h4>
+		<div class="fotorama">
+			<img src="img/01.jpg" alt="imagem">			
+			<img src="img/02.jpg" alt="imagem">			
+			<img src="img/03.jpg" alt="imagem">			
+			<img src="img/04.jpg" alt="imagem">			
+		</div>
+		<!-- <img src="img/01.jpg" alt="imagem">
+		<img src="img/02.jpg" alt="imagem">
+		<img src="img/03.jpg" alt="imagem">
+		<img src="img/04.jpg" alt="imagem"> -->
+
+		<img class="sombra" src="img/sombra.png" alt="imagem">
+		<img class="sombra2" src="img/sombra.png" alt="imagem">
+		<img class="sombra3" src="img/sombra.png" alt="imagem">
+		<img class="sombra4" src="img/sombra.png" alt="imagem">
+		
+	</article>
+	<!-- CRIANDO OS PERSONAGENS -->
+	<section class="personagens">
+		<h4 id="Personagens">Personagens</h4>
+			<img class="ps" src="img/ps.jpg" alt="imagem">
+			<img class="ps2" src="img/ps2.jpg" alt="imagem">
+			<h5> WALTER HARTWEL WHITE </h5>
+			<h5> JESSE PINKMAN</h5>
+			
+	</section>
+		<a class="link" href="http://www.amc.com/shows/breaking-bad" target="_blank"> Clique Para Saber Mais !!</a>
+		<a class="site" href="http://www.breakingbadbrasil.com/" target="_blank"> Site Oficial !!</a>
+	<!-- CRIANDO O RODAPE -->
+	<footer>
+		<em>©Todos os Direitos Reservados |  2017 </em>
+		<a href="#"> <img src="img/facebook.png" class="social"></a>
+		<a href="#"> <img src="img/google.png" class="social"> </a>
+		<a href="#"> <img src="img/whatsapp.png" class="social"></a>
+	</footer>
+	<video src="media/breaking.webm" autoplay loop muted></video>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		//realizando o click
+		$("#banner").click(function(){
+			$("html,body").animate(
+					{scrollTop:$(".banner").offset().top}, 2000
+				); return false;		
+		});//fecha function
+
+		$("#texto").click(function(){
+			$("html, body").animate(
+						{scrollTop:$(".texto").offset().top}, 2000
+				); return false;		
+		});//fecha function
+
+		$("#imagem").click(function(){
+			$("html, body").animate(
+						{scrollTop:$("#Imagem").offset().top}, 2000
+				); return false;		
+		});//fecha function
+
+		$("#personagens").click(function(){
+			$("html, body").animate(
+						{scrollTop:$("#Personagens").offset().top}, 2000
+				); return false;		
+		});//fecha function
+
+
+	</script>
+</body>
+</html>
